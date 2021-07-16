@@ -104,7 +104,7 @@ function Search( props ) {
                 </div>
                 <div>
                     <FormControl className={classes.formControl}>
-                        <FormLabel>Living:</FormLabel>
+                        <FormLabel>Status:</FormLabel>
                         <FormGroup>
                             <FormControlLabel
                                 control={<Checkbox checked={alive} onChange={handleChange} name="alive" />}

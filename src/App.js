@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import RickAndMortyList from './RickAndMortyList';
+import RickAndMortyList from './components/RickAndMortyList';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import CardComp from './Card';
+import CardComp from './components/RickAndMortyCardDetail';
 
 function App() {
   const [item, setItem] = useState();

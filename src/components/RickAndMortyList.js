@@ -14,7 +14,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
-import Search from './search';
+import Search from './Search';
 import Icon from '@material-ui/core/Icon';
 import { Link, Route, Switch } from "react-router-dom";
 

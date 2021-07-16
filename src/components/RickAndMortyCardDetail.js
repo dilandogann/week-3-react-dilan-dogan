@@ -93,11 +93,6 @@ function CardComp({ image, name, gender, type, status, location,episode }) {
                                 {name.charAt(0)}
                             </Avatar>
                         }
-                        action={
-                            <IconButton aria-label="settings">
-                                <MoreVertIcon />
-                            </IconButton>
-                        }
                         title="Character Name:"
                         subheader={name}
                     />
