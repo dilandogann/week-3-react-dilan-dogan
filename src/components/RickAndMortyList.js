@@ -83,6 +83,7 @@ function RickAndMortyList(props) {
     const [url, setUrl] = useState('https://rickandmortyapi.com/api/character');
     const classes = useStyles();
 
+    //Getting data from api
     useEffect(() => {
         fetch(url)
             .then((response) => response.json())
@@ -91,9 +92,11 @@ function RickAndMortyList(props) {
             });
     }, [url]);
 
+    //Handle url change when child component emits new url
     const handleUrlChange = (url) => {
         setUrl('https://rickandmortyapi.com/api/character/' + url)
     }
+    //Set selected item and show it in card component
     const setSelected = (selectedData) => {
         props.setSelectedItem(selectedData)
     }

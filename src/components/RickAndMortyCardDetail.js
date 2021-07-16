@@ -11,10 +11,7 @@ import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -69,6 +66,8 @@ function CardComp({ image, name, gender, type, status, location,episode }) {
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
+
+    //Get episodes name with string operations
     useEffect(() => {
         let episodesStr = ''
         for (let i = 0; i < 5; i++) {
